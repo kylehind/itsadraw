@@ -1,0 +1,624 @@
+/*
+Theme Name: Grid Theme Responsive
+Theme URI: http://www.dessign.net/gridthemeresponsive
+Description: Grid Theme Responsive for WordPress is stylish, customizable, simple, and readable. Perfect for any illustrator or graphic designer. 
+Version: 2.5
+Author: Marios Lublinski
+Author URI: http://www.dessign.net
+Tags: 4 column theme, white, clean
+*/
+
+
+/* Fonts */
+@font-face{
+	font-family: clearfacegothic;
+	src: url('http://itsadraw.net/wp-content/fonts/ClearfaceGothicLTStd-Medium.otf');
+	font-weight:100;
+}
+@font-face{
+	font-family: gothammedium;
+	src: url('http://itsadraw.net/wp-content/fonts/Gotham-Medium.otf');
+	font-weight:100;
+}
+/*NO POSTS*/
+.no_posts_yet{
+	position:absolute;
+	top:40%;
+	left:0;
+	right:0;
+	margin-top:-25%;
+	font-size:50px;
+	border:5px solid #fff;
+	width:400px;
+	text-transform:uppercase;
+	margin:0 auto;
+	padding:35px 5px 20px 5px;
+	text-align:center;
+}
+/*SUBMIT*/
+.requirements{
+	position:relative;
+	top:-18px;
+	left:270px;
+	font-family:Helvetica;
+	font-size:10px;
+	width:100px;
+}
+textarea[placeholder]{
+}
+.wpcf7-submit{
+	position:relative;
+	left:0;
+	right:0;
+	width:100px !important;
+	margin:0 75px;
+}
+.wpcf7-submit:hover{
+	color:#30cb2b !important;
+	background:#fff;
+}
+#file {
+	position:relative;
+   	display:none;
+  	width:230px;
+	height:37px;
+	font-size:18px;
+	color:#fff;
+	border:3px #fff solid;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	padding:0 10px;
+	margin:0 0 -15px 0;
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/add_file.png') no-repeat;
+	background-position:214px 0;
+	z-index:1;
+}
+#file .file_name{
+	line-height:25px;
+	position:relative;
+	top:10px;
+	z-index:-2;
+	text-align:left;
+	
+}
+.post-17 {
+	margin-top:60px;
+}
+.wpcf7 {
+	width:250px;
+	margin:0 auto !important;
+}
+.wpcf7 p{
+	margin:0;
+}
+.wpcf7 input[type="file"]{
+	display:none;
+}
+.wpcf7-form-control{
+	width:230px;
+	background:#30cb2b;
+	border: solid 3px #fff;
+	margin-bottom:20px;
+	color:#fff !important;
+	text-transform:uppercase;
+	padding:10px 10px 7px 10px;
+	font-size:18px;
+	font-family: clearfacegothic; 
+}
+
+.wpcf7-not-valid-tip{
+	display:none !important;
+}
+.wpcf7-response-output{
+	position:relative;
+	text-align:left;
+	top:-462.5px;
+	left:-260px;
+	width:230px;
+	font-size:15px;
+	border:none !important;
+	text-transform:uppercase;
+}
+.wpcf7-validation-errors{
+}
+.text-337{
+	height:118px !important;
+}
+.wpcf7-text{
+	height:17px;
+}
+textarea:focus, input:focus {
+    color: #fff;
+}
+
+/* Global */
+* { 
+	margin: 0; 
+	padding: 0;
+	color:#fff;
+}
+html, body { 
+	font-size: 12px; 
+	font-family: clearfacegothic; 
+	color: #fff; 
+	background:#30cb2b;
+}
+#main_container { 
+	position:absolute;
+	top:0;
+	width: 100%; 
+	height:100%;
+	margin: 0 auto; 
+}
+h1,h2,h3,h4,h5,p {
+	 margin: 10px 0; 
+}
+.left { 
+	float: left; 
+}
+.right { 
+	float: right; 
+}
+.clear { 
+	clear: both; 
+}
+img { 
+	border: none; 
+}
+a { 
+	color: #666; 
+	text-decoration: none; 
+}
+a:hover { 
+	color:#333; 
+}
+::-webkit-input-placeholder {
+   color: #fff;
+   font-family: clearfacegothic; 
+
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff; 
+   font-family: clearfacegothic; 
+ 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff; 
+   font-family: clearfacegothic; 
+ 
+}
+
+:-ms-input-placeholder {  
+   color: #fff; 
+   font-family: clearfacegothic; 
+ 
+}
+
+/* Header */
+.kick_off_header{
+	margin-top:60px;
+}
+#header {
+	position:relative; 
+	background-color:#30cb2b; 
+	height:80px;
+	width:100%;
+}
+.logo {
+	position:absolute;
+	display:inline-block;
+	height:100%;
+	left:0;
+	right:0;
+}
+.logo a{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/logo.png') no-repeat;
+    	width:52px;
+	height:52px;
+	margin:0 auto;
+	display:block;
+	margin-top:14px;
+}
+.header_social_icons_cont { 
+	position:relative;
+	display:inline-block;
+	float:left;
+	width:45%;
+	height:30px;
+	margin-top:22px;
+	margin-left:2%;
+	z-index:1000;
+}
+.menu-navigation-container {
+	position:relative;
+	display:inline-block;
+	float:right;
+	width:45%;
+	height:30px;
+	margin-top:22px;
+	margin-right:2%;
+	z-index:1000;
+}
+.menu li { 
+	list-style:none;
+	float: right; 
+	margin:0 0 0 55px 
+}
+.menu li a { 
+	color: #fff; 
+	text-decoration: none; 
+	padding: 8px 7px 3px 7px;  
+	display: block;
+	border:3px solid #30cb2b;	
+}
+.menu li a:hover { 
+	border:3px solid #fff;
+}
+.menu li.current-menu-item a, #menu_container ul li.current_page_item a { 
+	border:3px solid #fff;
+}
+.menu a{
+	font-family:clearfacegothic; 
+	font-size:17px; font-weight:normal; 
+	letter-spacing:1px; 
+	text-transform:uppercase;
+}
+
+.header_social_icons_cont img { 
+	float: left; 
+	margin-right: 7px; 
+}
+
+/* Content */
+#content{
+}
+#content_inside{
+position:absolute;
+top: 50%;
+left: 50%;
+width:80%;
+margin-left: -40%; /*set to a negative number 1/2 of your width*/
+text-align: center;
+}
+#content_inside p{
+}
+
+/* Main Page */
+#main_content_inside{
+	
+}
+
+.image_container {width:100%;}
+.image_container img{width:100%;}
+.image_container a{display:block;}
+.home_post_cont { 
+	float:left;
+	width:25%;
+}
+/* Thumbnail Hover */
+.home_post_cont a .home_post_content{
+	opacity:0;
+	width:100%;
+	position:relative;
+	background-size:contain;
+	z-index:1000;
+}
+.home_post_cont a:hover .home_post_content{
+	opacity:1;
+}
+/* 12 */
+.home_post_cont .post-126{
+	background:url('http://itsadraw.net/wp-content/uploads/12_JUNE_SCORE.png') no-repeat;	
+}
+/* 13 */
+.home_post_cont .post-124{
+	background:url('http://itsadraw.net/wp-content/uploads/13_JUNE_SCORE.png') no-repeat;
+}
+/* 14 */
+.home_post_cont .post-122{
+	background:url('http://itsadraw.net/wp-content/uploads/14_JUNE_SCORE.png') no-repeat;
+}
+/* 15 */
+.home_post_cont .post-120{
+	background:url('http://itsadraw.net/wp-content/uploads/15_JUNE_SCORE.png') no-repeat;
+}
+/* 16 */
+.home_post_cont .post-118{
+	background:url('http://itsadraw.net/wp-content/uploads/16_JUNE_SCORE.png') no-repeat;
+/* 17 */
+}.home_post_cont .post-116{
+	background:url('http://itsadraw.net/wp-content/uploads/17_JUNE_SCORE.png') no-repeat;
+}
+/* 18 */
+.home_post_cont .post-112{
+	background:url('http://itsadraw.net/wp-content/uploads/18_JUNE_SCORE.png') no-repeat;
+}
+/* 19 */
+.home_post_cont .post-110{
+	background:url('http://itsadraw.net/wp-content/uploads/19_JUNE_SCORE.png') no-repeat;
+}
+/* 20 */
+.home_post_cont .post-108{
+	background:url('http://itsadraw.net/wp-content/uploads/20_JUNE_SCORE.png') no-repeat;
+}
+/* 21 */
+.home_post_cont .post-106{
+	background:url('http://itsadraw.net/wp-content/uploads/21_JUNE_SCORE.png') no-repeat;
+}
+/* 22 */
+.home_post_cont .post-104{
+	background:url('http://itsadraw.net/wp-content/uploads/22_JUNE_SCORE.png') no-repeat;
+}
+/* 23 */
+.home_post_cont .post-102{
+	background:url('http://itsadraw.net/wp-content/uploads/23_JUNE_SCORE.png') no-repeat;
+}
+/* 24 */
+.home_post_cont .post-100{
+	background:url('http://itsadraw.net/wp-content/uploads/24_JUNE_SCORE.png') no-repeat;
+}
+/* 25 */
+.home_post_cont .post-98{
+	background:url('http://itsadraw.net/wp-content/uploads/25_JUNE_SCORE.png') no-repeat;
+}
+/* 26 */
+.home_post_cont .post-96{
+	background:url('http://itsadraw.net/wp-content/uploads/26_JUNE_SCORE.png') no-repeat;
+}
+/* 27 */
+.home_post_cont .post-94{
+	background:url('http://itsadraw.net/wp-content/uploads/27_JUNE.png') no-repeat;
+}
+/* 28 */
+.home_post_cont .post-92{
+	background:url('http://itsadraw.net/wp-content/uploads/28_JUNE_SCORE.png') no-repeat;
+}
+/* 29 */
+.home_post_cont .post-90{
+	background:url('http://itsadraw.net/wp-content/uploads/29_JUNE_SCORE.png') no-repeat;
+}
+/* 30 */
+.home_post_cont .post-88{
+	background:url('http://itsadraw.net/wp-content/uploads/30_JUNE_SCORE.png') no-repeat;
+}
+/* 01 */
+.home_post_cont .post-86{
+	background:url('http://itsadraw.net/wp-content/uploads/01_JULY_SCORE.png') no-repeat;
+}
+/* 02 */
+.home_post_cont .post-84{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/02_JULY2.png') no-repeat;
+}
+/* 03 */
+.home_post_cont .post-82{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/03_JULY2.png') no-repeat;
+}
+/* 04 */
+.home_post_cont .post-80{
+	background:url('http://itsadraw.net/wp-content/uploads/04_JULY_SCORE.png') no-repeat;
+}
+/* 05 */
+.home_post_cont .post-78{
+	background:url('http://itsadraw.net/wp-content/uploads/05_JULY_SCORE.png') no-repeat;
+}
+/* 06 */
+.home_post_cont .post-76{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/06_JULY2.png') no-repeat;
+}
+/* 07 */
+.home_post_cont .post-74{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/07_JULY2.png') no-repeat;
+}
+/* 08 */
+.home_post_cont .post-72{
+	background:url('http://itsadraw.net/wp-content/uploads/08_JULY_SCORE.png') no-repeat;
+}
+/* 09 */
+.home_post_cont .post-70{
+	background:url('http://itsadraw.net/wp-content/uploads/09_JULY_SCORE.png') no-repeat;
+}
+/* 10 */
+.home_post_cont .post-68{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/10_JULY2.png') no-repeat;
+}
+/* 11 */
+.home_post_cont .post-66{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/11_JULY2.png') no-repeat;
+}
+/* 12 */
+.home_post_cont .post-64{
+	background:url('http://itsadraw.net/wp-content/uploads/01_JULY_SCORE.png') no-repeat;
+}
+/* 13 */
+.home_post_cont .post-62{
+	background:url('http://itsadraw.net/wp-content/uploads/2014/06/13_JULY2.png') no-repeat;
+}
+
+
+
+/* Kick off page */
+.affiliates{
+	position:absolute;
+	right:50px;
+	bottom:50px;
+}
+.chase{
+	width:90px;
+	display:inline-block;
+}
+.uclan{
+	position:relative;
+	width:65px;
+	display:inline-block;
+	margin-left:20px;
+	top:3px;
+}
+.typo_logo{
+	width:80px;
+	position:absolute;
+	left:0;
+	right:0;
+	margin:0 auto;
+}
+#main_container.post-4{
+	overflow:hidden;
+}
+.post-4 {
+}
+.post-4 p{
+	margin:0;
+	padding:22.5px 0;
+	color:#fff;
+	font-family:clearfacegothic; 
+	font-weight:100;
+	text-align:center;
+}
+.inner_content{
+}
+.kick_off_text p{
+	padding:10px 0;
+}
+.kick_off_button{
+	position:absolute;
+	margin:0 auto;
+	bottom:20%;
+	left:0;
+	right:0;
+}
+.kick_off{
+	font-family:clearfacegothic; 
+	display:block;
+	height:100%;
+	width:76px;
+	border:4px solid #fff;	
+	padding:10px 10px 8px 10px;
+	margin:0 auto;
+	font-size:15px;
+	text-align:center;
+	color:#fff;
+	text-transform:uppercase;
+	margin:0 auto;
+}
+.kick_off:hover{
+	background:#fff;
+	color:#30cb2b;
+}
+/* Gallery */
+.download_button{
+	position:relative;
+	top:-40px;
+	left:35px;
+	display:none;
+	background:url('http://itsadraw.net/wp-content/uploads/download_button.png') no-repeat;
+	width:43px;
+	height:34px;
+}
+.download_button p{
+	font-family:gothammedium;
+	position:relative;
+	text-align:left;
+	width:80px;
+	left:50px;
+	top:13px;
+	font-size:10px;
+}
+.nivo-lightbox-overlay{
+	background:#30cb2b !important;
+}
+.wp-caption-text{
+	font-family:gothammedium;
+	opacity:0;
+	font-size:23px;
+	width:80%;
+	padding:10%;
+	text-align:left;
+	height:0;
+}
+.gallery-icon{
+	width:25%;
+}
+.gallery-item:hover .wp-caption-text{
+	opacity:1;
+}
+#gallery-item img:hover{
+	opacity:0;
+}
+.gallery-item{
+	margin-top:0 !important;
+	background:#30cb2b;
+}
+.gallery-item img{
+	width:100%;
+	border:none !important;
+}
+.portrait{
+	width:100%;
+}
+.landscape{
+	width:100%;
+}
+/* Footer */
+#footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+}
+/* Comments */ 
+#commentform input[type=submit] { background-color: #000; border: none; color: #fff; padding: 8px 10px; }
+#commentform a { color: #000; }
+
+.commentlist a { color: #000; }    
+.iphone-home-image { width: 300px !important; }
+/* Lightbox */
+#fancybox-overlay{
+	background-color:#30cb2b;
+}
+/* Sidebar */
+#sidebar { float: right; width: 270px; }
+.side_box { margin-bottom: 25px; }
+.side_box h3 { padding: 5px 5px; background-color: #000; margin-top: 0; color: #fff; }
+.side_box p { padding: 0px 5px; }
+.side_box ul { list-style-type: none; margin-left: 5px; }
+.side_box ul li { margin-bottom: 3px; }
+.textwidget { padding: 5px; }
+
+
+/* Admin Bar */
+#wpadminbar{
+	opacity:0.4;
+}
+/* iPhone */
+@media screen and (max-width: 480px) {
+
+#main_container { width: 100%; }
+.home_post_cont{
+	position:relative;
+	width:100%;
+}
+
+#header{
+	position:fixed;
+	right:0;
+	width:100%;
+	height:90px;
+	top:0;
+	margin:0;
+	z-index:99999;
+}
+.header_social_icons_cont{
+	position:fixed;
+	bottom:0;
+
+}
+
+/* large res */
+@media screen and (min-width: 1500px){
+	#content_inside{
+		top:46%;
+	}
+	.kick_off{
+		font-size:18px;
+	}
+}
